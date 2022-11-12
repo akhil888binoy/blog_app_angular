@@ -1,5 +1,14 @@
 <mat-sidenav-container class="container">
-  <mat-sidenav #sidebar mode="side" opened="">
+  <mat-sidenav #sidebar mode="side" opened>
     Sidebar content
   </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <div class="toolbar">
+        <mat-toolbar>
+          <mat-icon (click)="sidebar.toggle()">menu</mat-icon>
+        </mat-toolbar>
+      </div>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>
