@@ -10,16 +10,24 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
-import { DasboardComponent } from './admin/dasboard/dasboard.component';
-import { PostsComponent } from './admin/dasboard/posts/posts.component';
+
+import { PostsComponent } from './admin/dashboard/posts/posts.component';
+import { CommentsComponent } from './admin/dashboard/comments/comments.component';
+import { PagesComponent } from './admin/dashboard/pages/pages.component';
+import { SettingsComponent } from './admin/dashboard/settings/settings.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidebarComponent,
-    DasboardComponent,
-    PostsComponent
+    PostsComponent,
+    CommentsComponent,
+    PagesComponent,
+    SettingsComponent,
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
