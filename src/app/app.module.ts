@@ -10,12 +10,16 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { DasboardComponent } from './admin/dasboard/dasboard.component';
+import { PostsComponent } from './admin/dasboard/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    DasboardComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
