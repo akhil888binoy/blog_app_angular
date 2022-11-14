@@ -16,6 +16,9 @@ import { CommentsComponent } from './admin/dashboard/comments/comments.component
 import { PagesComponent } from './admin/dashboard/pages/pages.component';
 import { SettingsComponent } from './admin/dashboard/settings/settings.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     MatSidenavModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

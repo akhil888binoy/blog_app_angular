@@ -11,5 +11,8 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onPostData(){
+    alert('we are Working..')
+  }
 
 }

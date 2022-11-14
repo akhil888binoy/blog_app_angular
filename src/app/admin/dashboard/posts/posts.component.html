@@ -1,1 +1,13 @@
-<p>posts works!</p>
+<mat-card>
+  <form (submit)="onPostData()">
+    <mat-form-field>
+      <input type="text" matInput name="title" placeholder="Post Title here">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea  matInput name="content" rows="10" placeholder="Content here"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">
+      Save Post
+    </button>
+  </form>
+</mat-card>
