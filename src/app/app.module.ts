@@ -18,6 +18,7 @@ import { SettingsComponent } from './admin/dashboard/settings/settings.component
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import { PostlistComponent } from './admin/dashboard/posts/postlist/postlist.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {MatCardModule} from '@angular/material/card';
     PagesComponent,
     SettingsComponent,
     DashboardComponent,
+    PostlistComponent,
 
   ],
   imports: [
