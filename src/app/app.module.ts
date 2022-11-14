@@ -19,6 +19,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import { PostlistComponent } from './admin/dashboard/posts/postlist/postlist.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PostlistComponent } from './admin/dashboard/posts/postlist/postlist.com
     MatButtonModule,
     MatToolbarModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
