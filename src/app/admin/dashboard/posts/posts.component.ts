@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { PostsService } from './postlist/posts.service';
 
 @Component({
   selector: 'app-posts',
@@ -7,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ps:PostsService) { }
 
   ngOnInit(): void {
   }
-  onPostData(){
-    alert('we are Working..')
-  }
+  onPostData(form: NgForm){
+      this.ps.addPost(form.value.title, form.value.content, form.value.dateTime);
+    }
 
 }

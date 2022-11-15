@@ -1,5 +1,5 @@
-export interface post{
+export interface post {
   title: string,
   content: string,
-  dateTime:string
+  dateTime: Date
 }

@@ -21,6 +21,7 @@ import {MatCardModule} from '@angular/material/card';
 import { PostlistComponent } from './admin/dashboard/posts/postlist/postlist.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PostsService } from './admin/dashboard/posts/postlist/posts.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PostsService } from './admin/dashboard/posts/postlist/posts.service';
     MatToolbarModule,
     MatInputModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule
   ],
   providers: [PostsService],
   bootstrap: [AppComponent]
