@@ -12,4 +12,7 @@ export class PostsService {
     const post: post={title: title, content: content, dateTime: new Date() };
     this.posts.push(post)
   }
+  getAll(){
+    return this.posts;
+  }
 }

@@ -14,7 +14,13 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
   }
   onPostData(form: NgForm){
+    if(!form.invalid){
       this.ps.addPost(form.value.title, form.value.content, form.value.dateTime);
+      form.resetForm();
+    }else{
+      return
     }
+
+  }
 
 }
